@@ -1,12 +1,19 @@
 import { useNavigate } from "react-router";
 import Block from "../../components/Block";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Login() {
   const [password, setPassword] = useState("");
   const [wrong, setWrong] = useState(false);
 
   const navigate = useNavigate();
+
+  useEffect(() => {
+    const isLoggedIn = localStorage.getItem("loggedIn");
+    if (isLoggedIn === "true") {
+      navigate("/home");
+    }
+  }, [navigate]);
 
   return (
     <div className="bg-blue-400 p-10 flex flex-col gap-5 h-screen w-screen items-center justify-center">
@@ -16,6 +23,7 @@ export default function Login() {
           onSubmit={(e) => {
             e.preventDefault();
             if (password === "pleasedaddy") {
+              localStorage.setItem("loggedIn", "true");
               navigate("/home");
             } else {
               setWrong(true);
