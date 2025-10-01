@@ -12,7 +12,9 @@ export default function Home() {
         <Countdown />
       </Block>
 
-      <div className="justify-center text-center text-3xl text-blue-700">Happy 6 Months Pookie!!!</div>
+      <div className="justify-center text-center text-3xl text-blue-700 font-bold mt-20">
+        Happy 6 Months Baby!!!
+      </div>
       <GiftBox />
     </div>
   );
