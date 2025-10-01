@@ -13,7 +13,7 @@ export default function FirstPage({ onNext }: FirstPageProps) {
         first time and mesmerised by how beautiful you looked. Then I managed to
         grab your insta, and then we've been talking a lot since then. I fell in
         love with you much harder when we talked because of how fun you were to
-        talk with even though we just knew each other for a couple of weeks,
+        talk with, even though we just knew each other for a couple of weeks,
         days even, alongside the million reels you sent me. Then we had our
         first date (which you didn't really know it was a date hehe) and
         everything has been magical ever since that.
@@ -34,9 +34,9 @@ export default function FirstPage({ onNext }: FirstPageProps) {
         While our relationship, like any other relationships, hasn't been smooth
         sailing sometimes, and mainly because of my immaturity, I love how
         you're able to communicate your feelings and how to handle some
-        scenarios if it happens again in the future. I've made plenty of
-        mistakes and even broke my promise by making you cry which I regret a
-        lot. I'm deeply sorry for that and I will always improve and listen to
+        scenarios if they happen again in the future. I've made plenty of
+        mistakes and even broke my promise by making you cry which, I regret a
+        lot. I'm deeply sorry for that, and I will always improve and listen to
         you to be the best man for you
       </div>
 
