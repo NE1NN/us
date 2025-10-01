@@ -2,6 +2,7 @@ import { useState } from "react";
 import Block from "../../components/Block";
 import GiftBox from "../../components/GiftBox/GiftBox";
 import Countdown from "./Countdown";
+import { NavLink } from "react-router";
 
 export default function Home() {
   const [showClickHere, setShowClickHere] = useState(false);
@@ -82,9 +83,12 @@ export default function Home() {
             </div>
           </div>
 
-          <button className="bg-blue-700 w-fit px-6 py-3 rounded-lg text-blue-100 font-semibold cursor-pointer hover:bg-blue-700">
+          <NavLink
+            to="/flowers"
+            className="bg-blue-700 w-fit px-6 py-3 rounded-lg text-blue-100 font-semibold cursor-pointer hover:bg-blue-700"
+          >
             Click Me
-          </button>
+          </NavLink>
         </Block>
       </div>
     </div>
