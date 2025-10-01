@@ -13,7 +13,7 @@ export default function Home() {
       <div className="bg-blue-400 p-10 flex flex-col gap-5 h-full">
         <Block className="w-full">
           <div className="text-2xl text-blue-700 font-bold">
-            Days we've been together
+            Time together
           </div>
           <Countdown />
         </Block>
