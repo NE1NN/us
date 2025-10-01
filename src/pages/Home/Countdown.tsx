@@ -38,7 +38,10 @@ export default function Countdown() {
   return (
     <div className="flex gap-6">
       {Object.entries(countdownTimer).map(([key, values]) => (
-        <div className="flex flex-col bg-blue-200 items-center w-24 h-24 justify-center border-blue-600 border-b-4 rounded-lg">
+        <div
+          key={key}
+          className="flex flex-col bg-blue-200 items-center w-24 h-24 justify-center border-blue-600 border-b-4 rounded-lg"
+        >
           <div className="text-xl text-blue-500 font-bold">{values}</div>
           <div>{key}</div>
         </div>
