@@ -34,7 +34,7 @@ export default function Home() {
         <div className="bg-black opacity-50 absolute flex w-screen h-screen justify-center items-center -z-10" />
 
         <Block className="w-3xl z-10 p-5">
-          <div>Dear Sophie,</div>
+          <div className="mr-auto font-bold text-xl">Dear Sophie,</div>
           <div>
             Happy 6 months! Crazy how fast time flew, I remember seeing you for
             the first time and mesmerised by how beautiful you looked. Then I
@@ -71,8 +71,15 @@ export default function Home() {
             So yeah, sorry if it's a bit too long, I just feel like my feelings
             for you can't simply be written with mere words and need thousands
             of words to just convey a fraction of what I feel. All I know is{" "}
-            <b>I'm deeply in love with you</b>. Happy 6 months my princess,
-            999999 months to come :)
+            <b className="text-blue-100">I'm deeply in love with you.</b> Happy
+            6 months my princess, 999999 months to come :)
+          </div>
+
+          <div className="mr-auto mt-5">
+            <div className="mr-auto font-bold text-xl">Regards,</div>
+            <div className="mr-auto font-bold text-xl">
+              Your Boyfriend, Hindie
+            </div>
           </div>
 
           <button className="bg-blue-700 w-fit px-6 py-3 rounded-lg text-blue-100 font-semibold cursor-pointer hover:bg-blue-700">
