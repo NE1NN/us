@@ -1,10 +1,14 @@
 import { useReducer } from "react";
-import "./giftbox.css"
+import "./giftbox.css";
 
 import box from "../../assets/box.png";
 import boxLid from "../../assets/box-lid.png";
 import kuku from "../../assets/jump-character.png";
 import Confetti from "./Confetti/Confetti";
+
+type GiftBoxProps = {
+  onClick: () => void;
+};
 
 const init_state = {
   move: "move",
@@ -12,7 +16,7 @@ const init_state = {
   rotated: "",
   rotating: "",
 };
-export default function GiftBox() {
+export default function GiftBox({ onClick }: GiftBoxProps) {
   const [state, setState] = useReducer(
     (state, new_state) => ({
       ...state,
@@ -42,11 +46,17 @@ export default function GiftBox() {
   }
 
   return (
-    <div className="App">
+    <div>
       <Confetti open={jump === "jump"} />
       <div className="img-container">
         <img className={`kuku ${jump}`} src={kuku} alt="kuku" />
-        <button className="box" onClick={() => animate()}>
+        <button
+          className="box"
+          onClick={() => {
+            animate();
+            onClick();
+          }}
+        >
           <img src={box} alt="box" />
         </button>
         <img
