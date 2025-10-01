@@ -7,7 +7,7 @@ import Flowers from "./pages/Flowers/Flowers";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/us">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/flowers" element={<Flowers />} />
